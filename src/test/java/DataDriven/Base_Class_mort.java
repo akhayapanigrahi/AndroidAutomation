@@ -27,7 +27,7 @@ public class Base_Class_mort {
         service.start();
         Thread.sleep(25000);
         service_url = service.getUrl().toString();
-	System.out.println("Added one line to test");			
+        System.out.println("Hello");
 	}
 	
 	public static void Init_App() throws MalformedURLException, InterruptedException
