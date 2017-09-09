@@ -19,7 +19,6 @@ public class Base_Class_mort {
     static String Appium_JS_Path="C:\\Program Files (x86)\\Appium\\node_modules\\appium\\bin\\appium.js";
     static AppiumDriverLocalService service;
     static String service_url;
-	
 	public static void Start_Server() throws IOException, InterruptedException
 	{
 		service = AppiumDriverLocalService.buildService(new AppiumServiceBuilder().
@@ -28,7 +27,7 @@ public class Base_Class_mort {
         service.start();
         Thread.sleep(25000);
         service_url = service.getUrl().toString();
-				
+	System.out.println("Added one line to test");			
 	}
 	
 	public static void Init_App() throws MalformedURLException, InterruptedException
